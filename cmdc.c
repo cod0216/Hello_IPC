@@ -46,6 +46,8 @@ int input_send()
 	
 	if(write(out_fd, cmd_line, len) != len)
 		return -1;
+
+	return len;
 }
 
 int recv_output()
