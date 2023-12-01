@@ -65,6 +65,8 @@ int main()
 		if(strncmp(cmd_line, "exit", 4) == 0)
 			break;
 		printf("server : %s", cmd_line);
+		sleep(1);
+		printf("sleep : %s", cmd_line);
 	}
 	dis_connect();
 }
