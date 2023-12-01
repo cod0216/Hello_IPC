@@ -32,9 +32,10 @@ void connect_to_server()
 	out_fd = open(c_to_s, O_WRONLY);
 	if(out_fd < 0)
 		print_err_exit(c_to_s);
-		in_fd = open(s_to_c, O_RDONLY);
-		if(in_fd < 0)
-			print_err_exit(s_to_c);
+	
+	in_fd = open(s_to_c, O_RDONLY);
+	if(in_fd < 0)
+		print_err_exit(s_to_c);
 }
 
 int input_send()
